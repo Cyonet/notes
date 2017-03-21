@@ -1,0 +1,11 @@
+@function strip-units($number){
+	@return $number / ($number * 0 + 1);
+}
+@function pxToem($target-size,$context:$base-font-size){
+    @if not unitless($target-size){     
+        $target-size: strip-units($target-size);    }
+    @if not unitless($context){
+        $context: strip-units($context);
+    }
+    @return ($target-size / $context) * 1em;
+}
