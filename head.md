@@ -1,6 +1,6 @@
-#HTML基本的头部标签
+# HTML基本的头部标签
 
-##HTML基本的头部元素:
+## HTML基本的头部元素:
 
 ```html
 <!doctype html>
@@ -21,7 +21,7 @@
 ```
 >在桌面开发的时候可以让IE浏览器以最新的模式渲染页面，具体可以查看本文  Internet Explorer浏览器部分。
 
-##Meta 标签
+## Meta 标签
 
 >meta标签是HTML中head头部的一个辅助性标签，它位于HTML文档头部的 `<head>` 和 `<title>` 标记之间，它提供用户不可见的信息。虽然这部分信息用户不可见，但是其作用非常强大，特别是当今的前端开发工作中，设置合适的meta标签可以大大提升网站页面的可用性。
 
@@ -44,64 +44,64 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- 以上 3 个 meta 标签 *必须* 放在 head 的最前面；其他任何的 head 内容必须在这些标签的 *后面* -->
- 
+
 <!-- 允许控制资源的过度加载 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 <!-- 尽早地放置在文档中 -->
 <!-- 仅应用于该标签下的内容 -->
- 
+
 <!-- Web 应用的名称（仅当网站被用作为一个应用时才使用）-->
 <meta name="application-name" content="应用名称">
- 
+
 <!-- 针对页面的简短描述（限制 150 字符）-->
 <!-- 在*某些*情况下，该描述是被用作搜索结果展示片段的一部分 -->
 <meta name="description" content="一个页面描述">
- 
+
 <!-- 控制搜索引擎的抓取和索引行为 -->
 <meta name="robots" content="index,follow,noodp"><!-- 所有的搜索引擎 -->
 <meta name="googlebot" content="index,follow"><!-- 仅对 Google 有效 -->
- 
+
 <!-- 告诉 Google 不显示网站链接的搜索框 -->
 <meta name="google" content="nositelinkssearchbox">
- 
+
 <!-- 告诉 Google 不提供此页面的翻译 -->
 <meta name="google" content="notranslate">
- 
+
 <!-- 验证 Google 搜索控制台的所有权 -->
 <meta name="google-site-verification" content="verification_token">
- 
+
 <!-- 用来命名软件或用于构建网页（如 - WordPress、Dreamweaver）-->
 <meta name="generator" content="program">
- 
+
 <!-- 关于你的网站主题的简短描述 -->
 <meta name="subject" content="你的网站主题">
- 
+
 <!-- 非常简短（少于 10 个字）的描述。主要用于学术论文。-->
 <meta name="abstract" content="">
- 
+
 <!-- 完整的域名或网址 -->
 <meta name="url" content="https://example.com/">
- 
+
 <meta name="directory" content="submission">
- 
+
 <!-- 基于网站内容给出一般的年龄分级 -->
 <meta name="rating" content="General">
- 
+
 <!-- 允许控制 referrer 信息如何传递 -->
 <meta name="referrer" content="never">
- 
+
 <!-- 禁用自动检测和格式化可能的电话号码 -->
 <meta name="format-detection" content="telephone=no">
- 
+
 <!-- 通过设置为 “off” 完全退出 DNS 预取 -->
 <meta http-equiv="x-dns-prefetch-control" content="off">
- 
+
 <!-- 在客户端存储 cookie，web 浏览器的客户端识别 -->
 <meta http-equiv="set-cookie" content="name=value; expires=date; path=url">
- 
+
 <!-- 指定要显示在一个特定框架中的页面 -->
 <meta http-equiv="Window-Target" content="_value">
- 
+
 <!-- 地理标签 -->
 <meta name="ICBM" content="latitude, longitude">
 <meta name="geo.position" content="latitude;longitude">
@@ -153,7 +153,7 @@ viewport 可以让布局在移动浏览器上显示的更好。 通常会写
 
 
 
-##SEO 优化部分
+## SEO 优化部分
 
 - 标题
 
@@ -190,7 +190,7 @@ viewport 可以让布局在移动浏览器上显示的更好。 通常会写
 
 -------------------
 
-###百度禁止转码###
+### 百度禁止转码
 
 通过百度手机打开网页时，百度可能会对你的网页进行转码，脱下你的衣服，往你的身上贴狗皮膏药的广告，为此可在 head 内添加
 
@@ -200,58 +200,58 @@ viewport 可以让布局在移动浏览器上显示的更好。 通常会写
 
 相关链接：[SiteApp 转码声明](http://m.baidu.com/pub/help.php?pn=22&ssid=0&from=844b&bd_page_type=1)
 
-###推荐的 meta 属性###
+### 推荐的 meta 属性
 
 ***下面是不推荐使用的 meta 属性，因为它们采用率低，或已弃用：***
 
 ```html
 <!-- 用于声明文档语言，但支持得不是很好。最好使用 <html lang=""> -->
 <meta name="language" content="en">
- 
+
 <!-- Google 无视 & Bing 认为垃圾的指示器 -->
 <meta name="keywords" content="你,关键字,在这里,不使用空格,而用逗号进行分隔">
 <!-- 目前没有在任何搜索引擎中使用过的声明 -->
 <meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm">
- 
+
 <!-- 为垃圾邮件机器人收获 email 地址提供了一种简单的方式 -->
 <meta name="reply-to" content="email@example.com">
- 
+
 <!-- 最好使用 <link rel="author"> 或 humans.txt 文件 -->
 <meta name="author" content="name, email@example.com">
 <meta name="designer" content="">
 <meta name="owner" content="">
- 
+
 <!-- 告诉搜索机器人一段时间后重新访问该网页。这不支持，因为大多数搜索引擎使用随机时间间隔来重新抓取网页 -->
 <meta name="revisit-after" content="7 days">
- 
+
 <!-- 在一段时间后将用户重定向到新的 URL -->
 <!-- W3C 建议不要使用该标签。Google 建议使用服务器端的 301 重定向。-->
 <meta http-equiv="refresh" content="300; url=https://example.com/">
- 
+
 <!-- 描述网站的主题 -->
 <meta name="topic" content="">
- 
+
 <!-- 公司概要或网站目的 -->
 <meta name="summary" content="">
- 
+
 <!-- 一个已废弃的标签，和关键词 meta 标签的作用相同 -->
 <meta name="classification" content="business">
- 
+
 <!-- 是否是相同的 URL，年代久远且不支持 -->
 <meta name="identifier-URL" content="https://example.com/">
- 
+
 <!-- 和关键词标签类似的功能 -->
 <meta name="category" content="">
- 
+
 <!-- 确保你的网站在所有国家和语言中都能显示 -->
 <meta name="coverage" content="Worldwide">
- 
+
 <!-- 和 coverage 标签相同 -->
 <meta name="distribution" content="Global">
- 
+
 <!-- 控制在互联网上哪些用户可以访问 -->
-<meta http-equiv="Pics-label" content="value"> 
- 
+<meta http-equiv="Pics-label" content="value">
+
 <!-- 缓存控制 -->
 <!-- 最好在服务器端配置缓存控制 -->
 <meta http-equiv="Expires" content="0">
@@ -260,80 +260,80 @@ viewport 可以让布局在移动浏览器上显示的更好。 通常会写
 
 ```
 
-###link 标签###
+### link 标签
 
 >说到 link 标签，估计大家的第一反应和我一样，就是引入外部CSS样式文件的，不错，这是 link 标签最最常用的功能。不过它还有很多别的用处，比如这是浏览器 favicon 图标，touch图标等等。
 
 ```html
 <!-- 有助于防止出现内容重复的问题 -->
 <link rel="canonical" href="https://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
- 
+
 <!-- 之前用于包含 icon 链接，但已被废弃并不再使用 -->
 <link rel="shortlink" href="https://example.com/?p=42">
- 
+
 <!-- 链接到当前文档的一个 AMP HTML 版本 -->
 <link rel="amphtml" href="https://example.com/path/to/amp-version.html">
- 
+
 <!-- 表明一个 CSS 样式表 -->
 <link rel="stylesheet" href="https://example.com/styles.css">
- 
+
 <!-- 链接到一个指定 Web 应用程序“安装”证书的 JSON 文件 -->
 <link rel="manifest" href="manifest.json">
- 
+
 <!-- 链接到文档的作者 -->
 <link rel="author" href="humans.txt">
- 
+
 <!-- 指向一个适用于链接内容的版权申明 -->
 <link rel="copyright" href="copyright.html">
- 
+
 <!-- 给出可能的你的另一种语言的文档位置参考 -->
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
- 
+
 <!-- 提供了关于作者或其他人的信息 -->
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
 <link rel="me" href="mailto:name@example.com">
 <link rel="me" href="sms:+15035550125">
- 
+
 <!-- 链接到一个文档，包含当前文档的一个归档链接 -->
 <link rel="archives" href="https://example.com/2003/05/" title="May 2003">
- 
+
 <!-- 链接到层次结构中的顶级资源 -->
 <link rel="index" href="https://example.com/" title="DeWitt Clinton">
- 
+
 <!-- 给出该文档的起点 -->
 <link rel="start" href="https://example.com/photos/pattern_recognition_1_about/" title="Pattern Recognition 1">
- 
+
 <!-- 引导当前文档的前述资源序列 -->
 <link rel="prev" href="https://example.com/opensearch/opensearch-and-openid-a-sure-way-to-get-my-attention/" title="OpenSearch and OpenID? A sure way to get my attention.">
- 
+
 <!-- 给出一个自我参考 - 当文档有多个可能的参考时非常有用 -->
 <link rel="self" type="application/atom+xml" href="https://example.com/atomFeed.php?page=3">
- 
+
 <!-- 分别是在一系列文件中的第一个、下一个、上一个和最后一个 -->
 <link rel="first" href="https://example.com/atomFeed.php">
 <link rel="next" href="https://example.com/atomFeed.php?page=4">
 <link rel="previous" href="https://example.com/atomFeed.php?page=2">
 <link rel="last" href="https://example.com/atomFeed.php?page=147">
- 
+
 <!-- 当使用第三方服务来维护 blog 时使用 -->
 <link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
- 
+
 <!-- 当另一个 WordPress 博客链接到你的 WordPress 博客或文章时形成一个自动化的评论 -->
 <link rel="pingback" href="https://example.com/xmlrpc.php">
- 
+
 <!-- 当你在自己的页面上链接到一个 url 时通知它 -->
 <link rel="webmention" href="https://example.com/webmention">
- 
+
 <!-- 加载一个外部的 HTML 文件到当前 HTML 文件中 -->
 <link rel="import" href="component.html">
- 
+
 <!-- 打开搜索 -->
 <link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
- 
+
 <!-- Feeds -->
 <link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS">
 <link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
- 
+
 <!-- 预取，预载，预浏览 -->
 <link rel="dns-prefetch" href="//example.com/">
 <link rel="preconnect" href="https://www.example.com/">
@@ -345,24 +345,24 @@ viewport 可以让布局在移动浏览器上显示的更好。 通常会写
 
 具体说明查看：[https://css-tricks.com/prefetching-preloading-prebrowsing/](https://css-tricks.com/prefetching-preloading-prebrowsing/)
 
-###rss订阅###
+### rss订阅
 
 ```html
 <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" /> <!-- 添加 RSS 订阅 -->
 ```
-###不推荐的link标签###
+### 不推荐的link标签
 
 ***以下是不推荐使用的链接关系：***
 
 ```html
 <link rel="shortcut icon" href="path/to/favicon.ico">
- 
+
 <!-- 没有用的, 专有的和错误的, 详见 https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/Y_2eFRh9BOs/gULYapoRBwAJ -->
 <link rel="subresource" href="styles.css">
 ```
 具体说明查看：[https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/Y_2eFRh9BOs/gULYapoRBwAJ](https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/Y_2eFRh9BOs/gULYapoRBwAJ)
 
-###favicon 图标###
+### favicon 图标
 
 IE 11, Chrome, Firefox, Safari, Opera支持<link>形式设置：
 
@@ -385,7 +385,7 @@ IE 11, Chrome, Firefox, Safari, Opera支持<link>形式设置：
 
 ----------
 
-##QQ 浏览器（X5 内核）##
+## QQ 浏览器（X5 内核）
 
 **QQ 浏览器（X5 内核）同样适用于微信，QQ等第三方应用页面开发。**
 
@@ -398,7 +398,7 @@ IE 11, Chrome, Firefox, Safari, Opera支持<link>形式设置：
 <meta name="x5-page-mode" content="app">
 ```
 
-##360浏览器##
+## 360浏览器
 
 **设置 360 浏览器渲染模式：webkit 为极速内核，ie-comp 为 IE 兼容内核，ie-stand 为 IE 标准内核。**
 
@@ -415,7 +415,7 @@ html<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 
 这样写可以达到的效果是如果安装了 Google Chrome Frame，则使用 GCF 来渲染页面，如果没有安装 GCF，则使用最高版本的 IE 内核进行渲染。
 
-##UC 浏览器##
+## UC 浏览器
 
 - 设置屏幕方向
 
@@ -498,7 +498,7 @@ html<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 
 ------------------
 
-##Apple iOS原生浏览器##
+## Apple iOS原生浏览器
 
 - 智能 App 广告条
 
@@ -615,7 +615,7 @@ Android Lollipop 中的 Chrome 39 增加 theme-color meta 标签，用来控制�
 ```
 --------
 
-##Apple Safari 浏览器##
+## Apple Safari 浏览器
 
 Safari 10开始支持固定书签页的SVG favicons了，你可以这样使用：
 
@@ -632,7 +632,7 @@ Safari 10开始支持固定书签页的SVG favicons了，你可以这样使用�
 
 ------
 
-##Google Chrome浏览器
+## Google Chrome浏览器
 
 - 关闭chrome浏览器下翻译插件
 
@@ -662,10 +662,10 @@ Safari 10开始支持固定书签页的SVG favicons了，你可以这样使用�
 <!-- 链接到一个 manifest 并定义 manifest 的元数据。-->
 <!-- manifest.json 中的例子也可以通过以下链接找到。-->
 <link rel="manifest" href="manifest.json">
- 
+
 <!-- 定义你的网页为 Web 应用 -->
 <meta name="mobile-web-app-capable" content="yes">
- 
+
 <!-- 第一个是官方推荐格式。-->
 <link rel="icon" sizes="192x192" href="nice-highres.png">
 <link rel="icon" sizes="128x128" href="niceicon.png">
@@ -674,7 +674,7 @@ Safari 10开始支持固定书签页的SVG favicons了，你可以这样使用�
 <link rel="apple-touch-icon-precomposed" sizes="128x128" href="niceicon.png">
 ```
 ------
-##Internet Explorer浏览器###
+## Internet Explorer浏览器#
 
 - 模式设置
 
@@ -695,21 +695,21 @@ X-UA-Compatible相关链接：[https://blogs.msdn.microsoft.com/ie/2010/06/16/ie
 ```html
 <meta http-equiv="cleartype" content="on">
 <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
- 
-<!-- 
-Disable link highlighting on IE 10 on Windows Phone 
+
+<!--
+Disable link highlighting on IE 10 on Windows Phone
 具体说明查看：https://blogs.windows.com/buildingapps/2012/11/15/adapting-your-webkit-optimized-site-for-internet-explorer-10/-->
 <meta name="msapplication-tap-highlight" content="no">
- 
-<!-- 
+
+<!--
 Pinned sites
 具体说明查看：https://msdn.microsoft.com/en-us/library/dn255024(v=vs.85).aspx-->
 <meta name="application-name" content="Contoso Pinned Site Caption">
 <meta name="msapplication-tooltip" content="Example Tooltip Text">
 <meta name="msapplication-starturl" content="/">
- 
+
 <meta name="msapplication-config" content="http://example.com/browserconfig.xml">
- 
+
 <meta name="msapplication-allowDomainApiCalls" content="true">
 <meta name="msapplication-allowDomainMetaTags" content="true">
 <meta name="msapplication-badge" content="frequency=30; polling-uri=http://example.com/id45453245/polling.xml">
@@ -748,7 +748,7 @@ Pinned sites
 
 -------------
 
-##相关项目
+## 相关项目
 
 - [Atom HTML Head 片段](https://github.com/joshbuchea/atom-html-head-snippets) – Atom HEAD 片段包
 - [Sublime Text HTML Head 片段](https://github.com/marcobiedermann/sublime-head-snippets) – Sublime Text HEAD 片段包

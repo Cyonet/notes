@@ -1,6 +1,6 @@
-#mac 常用命令
+# mac 常用命令
 
-##目录操作
+## 目录操作
 
 |命令名	|功能描述|使用举例|
 |:--|:--|:--|
@@ -11,7 +11,7 @@
 |pwd|	显示当前目录的路径名|	pwd|
 |ls	|显示当前目录的内容	|ls -la|
 |dircmp|	比较两个目录的内容|	dircmp dir1 dir2|
-##文件操作
+## 文件操作
 |命令名	|功能描述|	使用举例|
 |:--|:--|:--|
 |cat	|显示或连接文件|	cat filename|
@@ -25,7 +25,7 @@
 |find	|使用匹配表达式查找文件	|find . -name "*.c" -print|
 |file	|显示文件类型	|file filename|
 |open	|使用默认的程序打开文件|	open filename|
-##选择操作
+## 选择操作
 |命令名	|功能描述	|使用举例|
 |:--|:--|:--|
 |head|	显示文件的最初几行|	head -20 filename|
@@ -42,7 +42,7 @@
 |comm|	显示两有序文件的公共和非公共行|	comm file1 file2|
 |wc	|统计文件的字符数、词数和行数|	wc filename|
 |nl|	给文件加上行号|	nl file1 >file2|
-##安全操作
+## 安全操作
 |命令名	|功能描述|	使用举例|
 |:--|:--|:--|
 |passwd	|修改用户密码|	passwd|
@@ -51,14 +51,14 @@
 |chown|	改变文件或目录的属主	|chown newowner filename|
 |chgrp	|改变文件或目录的所属组	|chgrp staff filename|
 |xlock|	给终端上锁|	xlock -remote|
-##编程操作
+## 编程操作
 |命令名	|功能描述	|使用举例|
 |:--|:--|:--|
 |make	|维护可执行程序的最新版本	|make|
 |touch|	更新文件的访问和修改时间	|touch -m 05202400 filename|
 |dbx|	命令行界面调试工具|	dbx a.out|
 |xde|	图形用户界面调试工具	|xde a.out|
-##进程操作
+## 进程操作
 
 |命令名	|功能描述	|使用举例|
 |:--|:--|:--|
@@ -66,13 +66,13 @@
 |kill|	终止进程	|kill -9 30142|
 |nice|	改变待执行命令的优先级	|nice cc -c *.c|
 |renice|	改变已运行进程的优先级	|renice +20 32768|
-##时间操作
+## 时间操作
 |命令名	|功能描述|	使用举例|
 |:--|:--|:--|
 |date|	显示系统的当前日期和时间	|date|
 |cal|	显示日历|	cal 8 1996|
 |time|	统计程序的执行时间|	time a.out|
-##网络与通信操作
+## 网络与通信操作
 |命令名	|功能描述|	使用举例|
 |:--|:--|:--|
 |telnet|	远程登录|	telnet hpc.sp.net.edu.cn|
@@ -84,14 +84,14 @@
 |mail	|阅读和发送电子邮件	|mail|
 |write|	给另一用户发送报文|	write username pts/1|
 |mesg|	允许或拒绝接收报文	|mesg n|
-##Korn Shell 命令
+## Korn Shell 命令
 |命令名	|功能描述|	使用举例|
 |:--|:--|:--|
 |history|	列出最近执行过的 几条命令及编号	|history|
 |r	|重复执行最近执行过的 某条命令|	r -2|
 |alias|	给某个命令定义别名	|alias del=rm -i|
 |unalias|	取消对某个别名的定义|	unalias del|
-##其它命令
+## 其它命令
 |命令名	|功能描述|	使用举例|
 |:--|:--|:--|
 |uname	|显示操作系统的有关信息	|uname -a|
