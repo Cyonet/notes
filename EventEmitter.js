@@ -7,7 +7,7 @@ class EventEmitter {
   on(type, listener) {
     const listeners = this.events[type] || (this.events[type] = []);
     listeners.push(listener);
-    return this.off(type, listener);
+    return () => this.off(type, listener);
   }
   off(type, listener) {
     const listeners = this.events[type] || [];
